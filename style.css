@@ -164,3 +164,60 @@ body{background:#fffdfc;font-family:"Noor",Tahoma,Arial,sans-serif;line-height:1
 
 /* V8 — reusable cards for dynamically scheduled program types */
 .track-intro{text-align:center;max-width:760px;margin:0 auto 30px}.track-intro h2{color:var(--rose);margin:12px 0;font-size:clamp(26px,3vw,36px)}.track-intro p{color:var(--muted)}.path-card{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.path-card p{margin:2px 0}.path-card .btn{margin-top:auto}.team-card .icon-circle{border-radius:50%}.topnav{flex-wrap:wrap;row-gap:3px}.topnav a{font-size:clamp(10px,.76vw,13px)}
+
+
+/* V8.1 fix — homepage logo frame only, no protruding extensions */
+.hero-approved .hero-illustration{position:relative;display:flex;align-items:center;justify-content:center;min-height:525px!important;background-size:min(78%,470px) auto!important;background-position:center center!important;background-repeat:no-repeat!important}
+.hero-approved .hero-illustration:before{content:""!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;width:min(78%,430px)!important;aspect-ratio:1 / 1.02!important;inset:auto!important;border-radius:34px!important;border:1px solid #ecd8c4!important;background:linear-gradient(145deg,rgba(255,250,247,.96),rgba(248,219,225,.78))!important;box-shadow:inset 0 0 0 1px rgba(220,174,110,.28),0 10px 28px rgba(195,107,128,.10)!important;clip-path:none!important;z-index:-1!important}
+.hero-approved .hero-illustration:after{content:none!important;display:none!important}
+@media(max-width:900px){.hero-approved .hero-illustration{min-height:420px!important;background-size:min(78%,390px) auto!important}.hero-approved .hero-illustration:before{width:min(80%,350px)!important;border-radius:28px!important}}
+@media(max-width:690px){.hero-approved .hero-illustration{min-height:320px!important;background-size:min(77%,285px) auto!important}.hero-approved .hero-illustration:before{width:min(82%,260px)!important;border-radius:24px!important}}
+@media(max-width:480px){.hero-approved .hero-illustration{min-height:270px!important;background-size:min(77%,235px) auto!important}.hero-approved .hero-illustration:before{width:min(84%,220px)!important;border-radius:22px!important}}
+
+
+/* V8.2 final polish — proper logo frame and refined Islamic SVG icons */
+.svg-icon{display:block;width:1.1em;height:1.1em;stroke:currentColor;fill:none;flex:0 0 auto}
+.icon-circle .svg-icon,.value-icon .svg-icon,.program-symbol .svg-icon,.stat-icon .svg-icon,.cover .svg-icon,.gallery-box .svg-icon,.hero-feature span .svg-icon{width:100%;height:100%}
+.icon-circle,.value-icon,.program-symbol,.stat-icon{display:grid;place-items:center}
+.cover,.gallery-box{color:#bf2b72}
+.hero-feature span{display:grid;place-items:center}
+.contact-line{display:flex;align-items:center;gap:10px}
+.contact-line .svg-icon{width:18px;height:18px}
+.hero-approved .hero-illustration{position:relative;display:flex;align-items:center;justify-content:center;min-height:520px!important;background-image:url("assets/home-reading-logo.png")!important;background-repeat:no-repeat!important;background-size:min(78%,455px) auto!important;background-position:center center!important;filter:drop-shadow(0 14px 22px rgba(190,99,133,.12))!important}
+.hero-approved .hero-illustration:before{content:""!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;width:min(74%,390px)!important;height:min(80%,395px)!important;inset:auto!important;border-radius:30px!important;border:1px solid #ecd7c3!important;background:linear-gradient(145deg,rgba(255,251,248,.98),rgba(249,229,235,.88))!important;box-shadow:inset 0 0 0 1px rgba(223,182,115,.30),0 10px 24px rgba(196,126,147,.10)!important;clip-path:none!important;z-index:-1!important}
+.hero-approved .hero-illustration:after{content:none!important;display:none!important}
+@media(max-width:900px){.hero-approved .hero-illustration{min-height:405px!important;background-size:min(80%,360px) auto!important}.hero-approved .hero-illustration:before{width:min(78%,320px)!important;height:min(82%,320px)!important}}
+@media(max-width:690px){.hero-approved .hero-illustration{min-height:310px!important;background-size:min(78%,275px) auto!important}.hero-approved .hero-illustration:before{width:min(80%,245px)!important;height:min(80%,245px)!important;border-radius:24px!important}}
+@media(max-width:480px){.hero-approved .hero-illustration{min-height:265px!important;background-size:min(78%,225px) auto!important}.hero-approved .hero-illustration:before{width:min(80%,210px)!important;height:min(80%,210px)!important;border-radius:20px!important}}
+
+.program-symbol{width:58px;height:58px;border-radius:16px;background:linear-gradient(145deg,#fff1f6,#fff8eb);color:#b82a71;border:1px solid #f1dde6;margin-bottom:14px}
+.value-icon{width:56px;height:56px;border-radius:18px;background:linear-gradient(145deg,#fff1f6,#fff8eb);color:#b82a71;border:1px solid #f1dde6;margin-bottom:14px}
+.stat-icon{width:48px;height:48px;border-radius:50%;background:#fff3f7;color:#b82a71;display:grid;place-items:center;margin:0 auto 10px;border:1px solid #f1dde6}
+.cover .svg-icon,.gallery-box .svg-icon{width:66px;height:66px}
+.hero-feature span .svg-icon{width:28px;height:28px}
+.icon-circle .svg-icon{width:28px;height:28px}
+.value-icon .svg-icon{width:28px;height:28px}
+.program-symbol .svg-icon{width:28px;height:28px}
+.stat-icon .svg-icon{width:24px;height:24px}
+
+/* V9 — approved logo untouched; isolated arch-and-flowers ornament */
+.hero-approved .hero-illustration{
+  min-height:510px!important; width:100%;position:relative!important;
+  display:grid!important;place-items:center!important;
+  background:none!important;filter:none!important;isolation:isolate!important;
+}
+.hero-approved .hero-illustration::before,.hero-approved .hero-illustration::after{content:none!important;display:none!important;}
+.hero-floral-frame{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(100%,500px);height:auto;max-height:100%;object-fit:contain;z-index:0;pointer-events:none;}
+.hero-original-logo{position:relative;width:min(74%,388px);height:auto;max-height:68%;object-fit:contain;z-index:1;filter:drop-shadow(0 6px 8px #a45a7020);}
+.program-tile{text-align:center!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:11px!important;min-height:224px;}
+.program-symbol{margin:0 auto 7px!important;width:78px!important;height:78px!important;border-radius:24px!important;}
+.program-symbol .svg-icon{width:43px!important;height:43px!important;}
+.value-card{text-align:center!important;}
+.value-icon{width:72px!important;height:72px!important;margin:0 auto 14px!important;}
+.value-icon .svg-icon{width:38px!important;height:38px!important;}
+.icon-circle{margin-inline:auto!important;width:72px!important;height:72px!important;}
+.icon-circle .svg-icon{width:40px!important;height:40px!important;}
+.card{text-align:center;}
+.hero-feature span .svg-icon{width:34px!important;height:34px!important;}
+@media(max-width:900px){.hero-approved .hero-illustration{min-height:410px!important}.hero-floral-frame{width:min(100%,395px)}.hero-original-logo{width:min(72%,305px)}}
+@media(max-width:690px){.hero-approved .hero-illustration{min-height:315px!important}.hero-floral-frame{width:min(100%,310px)}.hero-original-logo{width:min(72%,240px)}.program-symbol{width:67px!important;height:67px!important}.program-symbol .svg-icon{width:36px!important;height:36px!important}}
